@@ -63,7 +63,8 @@ void setup() {
     else{
       Serial.println("Wifi not connected");
     }
-    }
+    } 
+    
 void loop() {
     if (TimerCAM.Camera.get()) {
         Serial.println("Making POST request");
