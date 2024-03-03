@@ -17,10 +17,12 @@
 #include <WiFi.h>
 // #include <ArduinoHttpClient.h>
 #include <HTTPClient.h>
-const char ssid[] = "TP-Link_E740";
-const char password[] = "69762765";
+const char ssid[] = "Wifi";
+const char password[] = "Password";
 
-String servername =  "http://38ef-193-190-253-145.ngrok-free.app/image";
+String server =  "http://38ef-193-190-253-145.ngrok-free.app";
+String path = "/image";
+String fullUrl = server + path;
 WiFiClient wifi;
 HTTPClient http;
 
@@ -56,7 +58,7 @@ void setup() {
     }
     if(WiFi.status() == WL_CONNECTED){
       Serial.println("Wifi connected !!!!!!");
-        http.begin(servername); // Initialize HTTPClient with the URL
+        http.begin(fullUrl); // Initialize HTTPClient with the URL
     }
     else{
       Serial.println("Wifi not connected");
