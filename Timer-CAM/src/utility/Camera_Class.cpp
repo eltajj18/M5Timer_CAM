@@ -23,12 +23,14 @@ static camera_config_t camera_config = {
     .ledc_timer   = LEDC_TIMER_0,
     .ledc_channel = LEDC_CHANNEL_0,
 
-    .pixel_format  = PIXFORMAT_JPEG,
-    // .frame_size    = FRAMESIZE_QVGA,
-    .frame_size    = FRAMESIZE_FHD,
-    .jpeg_quality  = 16,
-    .fb_count      = 2,
-    .fb_location   = CAMERA_FB_IN_PSRAM,
+    .pixel_format = PIXFORMAT_JPEG,
+    // .frame_size = FRAMESIZE_SVGA,
+    .frame_size = FRAMESIZE_QXGA,
+
+    .jpeg_quality = 10,
+    .fb_count     = 2,
+    .fb_location  = CAMERA_FB_IN_PSRAM,
+    //.fb_location = CAMERA_FB_IN_DRAM,
     .grab_mode     = CAMERA_GRAB_WHEN_EMPTY,
     .sccb_i2c_port = 0,
 };

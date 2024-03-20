@@ -14,11 +14,11 @@
  */
 //NOTE: YOU CHANGE FB LCOATION IN CAMERA_CLASS.CPP :     .fb_location  = CAMERA_FB_IN_DRAM,
 
-#include "M5TimerCAM.h"
+#include "C:\Users\eltac\Documents\Arduino\http_post_second\Timer-CAM\src\M5TimerCAM.h"
 #include <WiFi.h>
-// #include <ArduinoHttpClient.h>
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
+
 const char* ssid = "TP-Link_E740";
 const char* password = "69762765";
 // const char* ssid = "Galaxy Note102f5e";
