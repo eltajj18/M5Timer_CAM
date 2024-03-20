@@ -14,7 +14,7 @@
  */
 //NOTE: YOU CHANGE FB LCOATION IN CAMERA_CLASS.CPP :     .fb_location  = CAMERA_FB_IN_DRAM,
 
-#include "C:\Users\eltac\Documents\Arduino\http_post_second\Timer-CAM\src\M5TimerCAM.h"
+#include "M5TimerCAM.h"
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
@@ -129,9 +129,7 @@ void loop() {
         
         if (!TimerCAM.Camera.get()) {
 
-            initializeCamera();
-            TimerCAM.Camera.free(); // Free the camera frame buffer
-
+          initializeCamera();
           TimerCAM.Camera.get();
       }
        else{

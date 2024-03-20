@@ -31,7 +31,7 @@ static camera_config_t camera_config = {
     .fb_count     = 2,
     .fb_location  = CAMERA_FB_IN_PSRAM,
     //.fb_location = CAMERA_FB_IN_DRAM,
-    .grab_mode     = CAMERA_GRAB_WHEN_EMPTY,
+    .grab_mode     = CAMERA_GRAB_LATEST,
     .sccb_i2c_port = 0,
 };
 
