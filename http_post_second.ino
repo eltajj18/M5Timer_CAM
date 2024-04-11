@@ -1,16 +1,16 @@
 /**
- * @file http_post.ino
- * @author SeanKwok (shaoxiang@m5stack.com)
- * @brief TimerCAM HTTP Post Test
+ * @file http_post_second.ino
+ * @author Eltaj Amirli
+ * @brief TimerCAM HTTP POST and polling
  * @version 0.1
- * @date 2023-12-28
+ * @date 2024-04-11
  *
  *
  * @Hardwares: TimerCAM
  * @Platform Version: Arduino M5Stack Board Manager v2.0.9
  * @Dependent Library:
  * TimerCam-arduino: https://github.com/m5stack/TimerCam-arduino
- * ArduinoHttpClient: https://github.com/arduino-libraries/ArduinoHttpClient
+ * Espressif-esp32-camera: https://github.com/espressif/esp32-camera
  */
 
 
@@ -102,7 +102,7 @@ bool initializeCamera() {
         return false; // Camera initialization failed
     }
     
-    
+
     Serial.println("Camera bool Init Success");
     // TimerCAM.Camera.sensor->set_pixformat(TimerCAM.Camera.sensor, PIXFORMAT_JPEG);
     // TimerCAM.Camera.sensor->set_framesize(TimerCAM.Camera.sensor, FRAMESIZE_SVGA);
