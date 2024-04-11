@@ -12,7 +12,7 @@
  * TimerCam-arduino: https://github.com/m5stack/TimerCam-arduino
  * ArduinoHttpClient: https://github.com/arduino-libraries/ArduinoHttpClient
  */
-//NOTE: YOU CHANGE FB LCOATION IN CAMERA_CLASS.CPP :     .fb_location  = CAMERA_FB_IN_DRAM,
+
 
 #include "M5TimerCAM.h"
 #include <WiFi.h>

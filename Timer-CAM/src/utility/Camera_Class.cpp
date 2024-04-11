@@ -28,13 +28,14 @@ static camera_config_t camera_config = {
     .frame_size = FRAMESIZE_QXGA,
 
     .jpeg_quality = 10,
-    .fb_count     = 2,
-    .fb_location  = CAMERA_FB_IN_PSRAM,
+    .fb_count = 3,
+    .fb_location = CAMERA_FB_IN_PSRAM,
     //.fb_location = CAMERA_FB_IN_DRAM,
     .grab_mode     = CAMERA_GRAB_LATEST,
     .sccb_i2c_port = 0,
 };
 
+    
 bool Camera_Class::begin() {
     esp_err_t err = esp_camera_init(&camera_config);
     if (err != ESP_OK) {
