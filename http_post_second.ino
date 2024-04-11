@@ -158,6 +158,7 @@ void loop() {
             //if (!requestSuccessful) {
               //  Serial.println("Failed to make POST request after retries.");
             //}
+            
             TimerCAM.Camera.free(); // Free the camera frame buffer
        }
         Serial.println("Wait five seconds");
