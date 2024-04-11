@@ -1,7 +1,7 @@
 /**
  * @file http_post_second.ino
  * @author Eltaj Amirli
- * @brief TimerCAM HTTP POST and polling
+ * @brief TimerCAM HTTP POST and Polling
  * @version 0.1
  * @date 2024-04-11
  *
@@ -135,6 +135,10 @@ void loop() {
           TimerCAM.Camera.get();
       }
        else{
+            //const int maxRetries = 3; // Maximum number of retries
+            //int retries = 0;
+            //bool requestSuccessful = false;
+            //while (retries < maxRetries && !requestSuccessful) {
             Serial.println("Making POST request");
             http.begin(fullUrl); // Ensure HTTP is initialized for the image post endpoint
             http.addHeader("Content-Type", "image/jpeg");
@@ -144,9 +148,16 @@ void loop() {
                 Serial.printf("[HTTP] POST... code: %d\n", httpResponseCode);
             } else {
                 Serial.printf("[HTTP] POST... failed, error: %s\n", http.errorToString(httpResponseCode).c_str());
+                  //retries++;
+                  //Serial.printf("Attempt %d failed. Retrying...\n", retries);
+                  //delay(2000); // Wait for 2 seconds before retrying
             }
 
             http.end(); // Close connection
+            //}
+            //if (!requestSuccessful) {
+              //  Serial.println("Failed to make POST request after retries.");
+            //}
             TimerCAM.Camera.free(); // Free the camera frame buffer
        }
         Serial.println("Wait five seconds");
