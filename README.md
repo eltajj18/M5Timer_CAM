@@ -12,7 +12,7 @@
 * HTTP POST request
 ## FlowChart
 
-![EE3-ESP32-Camera](https://github.com/eltajj18/M5Timer_CAM/assets/100543589/39e1cee8-5b01-4bbe-a195-96d6cb698576)
+![EE3-ESP32-Camera](https://github.com/eltajj18/M5Timer_CAM/assets/100543589/42a8bc26-7f73-42b8-aba2-887205f67f0a)
 
 ## Note
 * When adjusting the frame size and jpeg quality, instead of using set functions of TimerCam.Camera.sensor, adjust those 2 variables (.jpeg_quality, .frame_size) by directly editing Camera_Class.cpp
