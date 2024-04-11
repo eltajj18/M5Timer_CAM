@@ -102,6 +102,7 @@ bool initializeCamera() {
         return false; // Camera initialization failed
     }
     
+    
     Serial.println("Camera bool Init Success");
     // TimerCAM.Camera.sensor->set_pixformat(TimerCAM.Camera.sensor, PIXFORMAT_JPEG);
     // TimerCAM.Camera.sensor->set_framesize(TimerCAM.Camera.sensor, FRAMESIZE_SVGA);

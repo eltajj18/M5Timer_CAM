@@ -30,6 +30,7 @@ static camera_config_t camera_config = {
     .jpeg_quality = 10,
     .fb_count = 3,
     .fb_location = CAMERA_FB_IN_PSRAM,
+    
     //.fb_location = CAMERA_FB_IN_DRAM,
     .grab_mode     = CAMERA_GRAB_LATEST,
     .sccb_i2c_port = 0,
